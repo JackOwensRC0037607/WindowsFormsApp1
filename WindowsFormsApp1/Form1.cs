@@ -12,6 +12,8 @@ namespace WindowsFormsApp1
 {
     public partial class Form1 : Form
     {
+        private object txtBxName;
+
         public Form1()
         {
             InitializeComponent();
@@ -19,7 +21,7 @@ namespace WindowsFormsApp1
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Hello World");
+            MessageBox.Show("Hello, " + txtBxName.Text);
         }
     }
 }
